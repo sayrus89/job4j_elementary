@@ -22,4 +22,13 @@ public class SquareTest {
         int[] expected = new int[] {0, 1, 4, 9, 16};
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void whenBound8then01491625364964() {
+        int bound = 9;
+        int[] result = Square.calculate(bound);
+        int[] expected = {0, 1, 4, 9, 16, 25, 36, 49, 64};
+        Assert.assertArrayEquals(expected, result);
+
+    }
 }
