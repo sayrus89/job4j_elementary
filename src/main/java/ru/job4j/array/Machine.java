@@ -9,17 +9,11 @@ public class Machine {
         int[] coins = {10, 5, 2, 1};
         int[] rsl = new int[100];
         int size = 0;
-        // Найти размер сдачи.
         int change = money - price;
-        // Пройти по массиву монет.
-        for (int i = 0; i < coins.length; i++) {
-            // В цикле while проверить условия отбора монет автоматом (начиная с самой крупной).
-            while (change - coins[i] >= 0) {
-                // отнимаем от сдачи номинал очередной монеты.
-                change = change - coins[i];
-                // кладём монету в массив.
-                rsl[size] = coins[i];
-                // увеличиваем размер массива.
+        for (int coin : coins) {
+            while (change - coin >= 0) {
+                change = change - coin;
+                rsl[size] = coin;
                 size++;
             }
         }
