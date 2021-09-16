@@ -22,4 +22,12 @@ public class SortSelectedTest {
         int[] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void whenSort2() {
+        int[] data = new int[] {11, 33, 77, 44, 99, 66, 22, 55, 88, 100};
+        int[] result = SortSelected.sort(data);
+        int[] expected = {11, 22, 33, 44, 55, 66, 77, 88, 99, 100};
+        Assert.assertArrayEquals(expected, result);
+    }
 }
