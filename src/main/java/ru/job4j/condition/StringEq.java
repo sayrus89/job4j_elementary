@@ -1,7 +1,6 @@
 package ru.job4j.condition;
 
 public class StringEq {
-
     public static void main(String[] args) {
         String first = new String("one");
         String second = new String("one");
