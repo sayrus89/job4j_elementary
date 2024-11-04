@@ -2,7 +2,7 @@ package ru.job4j;
 
 public class ChatGPT {
 
-    /*
+    /**
     найди ошибку в коде package ru.job4j.array;
 
 public class SortSelected {
